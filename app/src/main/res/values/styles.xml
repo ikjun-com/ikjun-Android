@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
   <style name="Text.body" parent="TextAppearance.Material3.BodyMedium">
     <item name="android:textColor">?attr/colorOnBackground</item>
   </style>
@@ -12,5 +11,14 @@
   <style name="Text.Title" parent="TextAppearance.Material3.HeadlineMedium">
     <item name="android:textColor">?attr/colorOnBackground</item>
     <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="Text.SmallTitle" parent="TextAppearance.Material3.HeadlineSmall">
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="EditText.SingleLine" parent="ThemeOverlay.Material3.TextInputEditText">
+    <item name="android:inputType">text</item>
+    <item name="android:imeOptions">actionNext</item>
   </style>
 </resources>

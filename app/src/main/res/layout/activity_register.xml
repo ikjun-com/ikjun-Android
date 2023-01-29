@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+  <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".RegisterActivity">
+
+      <LinearLayout
+          android:id="@+id/linearLayout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginHorizontal="32dp"
+          android:orientation="vertical"
+          app:layout_constraintTop_toTopOf="parent"
+          tools:layout_editor_absoluteX="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+          <TextView
+              style="@style/Text.SmallTitle"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/id" />
+
+          <EditText
+              style="@style/EditText.SingleLine"
+              android:id="@+id/et_id"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+          <TextView
+              style="@style/Text.Hint"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="문자와 숫자를 사용할 수 있어요." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+          <TextView
+              style="@style/Text.SmallTitle"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/password" />
+
+          <EditText
+              style="@style/EditText.SingleLine"
+              android:id="@+id/et_pw"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:inputType="textPassword" />
+
+          <TextView
+              style="@style/Text.Hint"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="문자와 기호를 조합하여 10자 이상 작성해 주세요." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+          <TextView
+              style="@style/Text.SmallTitle"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/email" />
+
+          <EditText
+              style="@style/EditText.SingleLine"
+              android:id="@+id/et_email"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:inputType="textEmailAddress" />
+
+          <TextView
+              style="@style/Text.Hint"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+          <TextView
+              style="@style/Text.SmallTitle"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/nickname" />
+
+          <EditText
+              style="@style/EditText.SingleLine"
+              android:id="@+id/et_nickname"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:imeOptions="actionDone" />
+
+          <TextView
+              style="@style/Text.Hint"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="" />
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <Button
+          android:id="@+id/btn_done"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:text="@string/title_register"
+          android:textStyle="bold"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </ScrollView>
+</layout>
