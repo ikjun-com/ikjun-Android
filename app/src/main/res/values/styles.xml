@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="Text.body" parent="TextAppearance.Material3.BodyMedium">
+    <item name="android:textColor">?attr/colorOnBackground</item>
+  </style>
+
+  <style name="Text.Hint" parent="TextAppearance.Material3.LabelMedium">
+    <item name="android:textColor">?attr/colorOnSurface2</item>
+  </style>
+
+  <style name="Text.Title" parent="TextAppearance.Material3.HeadlineMedium">
+    <item name="android:textColor">?attr/colorOnBackground</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+</resources>

@@ -8,6 +8,7 @@
     <item name="colorOnPrimaryContainer">@color/pink_700</item>
     <item name="colorSurface">@color/gray_100</item>
     <item name="colorOnSurface">@color/gray_700</item>
+    <item name="colorOnSurface2">@color/gray_500</item>
 
     <item name="backgroundColor">@color/real_white</item>
     <item name="colorOnBackground">@color/black</item>
